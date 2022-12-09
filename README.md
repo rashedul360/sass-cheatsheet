@@ -4,21 +4,20 @@
 
 # প্রতিটি অধ্যায়ের নাম
 
-- [SASS কি? - what is SASS](#whatissass)
-- [SASS শিখতে কিভাবে প্রস্তুতি নিতে পারি ? what are prerequities to learn SASS](#whatAreprerequities)
-- [কেন SASS শিখব ? - why SASS?](#whySASS)
-- [কিভাবে SASS কাজ করে ? - how to does SASS work?](#howDOesSassWork)
-- [কিভাবে SASS HTML ফাইলের সাথে যুক্ত করব ? - how to add SASS to HTML?](#howTOAddSassTohtml)
-- [variables and nestings css rules](#varialesNastingClass2)
-- [Nesting css rules](#nestingCssRulescls2)
-- [Partials and sass settings](#partialsSassSettingsclas2)
-- [VS code settings (must be)](#vsCodeSettingsclas2)
-- [lets talk about module](#aboutModule)
-- [@mixin and @include](#mixinInclude)
-- [@include and @inheritance](#includeinheritance)
-- [@if @else @else if এঁর ব্যাবহার ](#ifElseElseIf)
-- [Loop - For - while](#loopForWhile)
-<link name="#whatissass">
+- [SASS কি? - what is SASS](#sass-কি---what-is-sass)
+- [SASS শিখতে কিভাবে প্রস্তুতি নিতে পারি ? what are prerequities to learn SASS](#sass-শিখতে-কিভাবে-প্রস্তুতি-নিতে-পারি----what-are-prerequities-to-learn-sass)
+- [কেন SASS শিখব ? - why SASS?](#কেন-sass-শিখব----why-sass)
+- [কিভাবে SASS কাজ করে ? - how to does SASS work?](#কিভাবে-sass-কাজ-করে----how-to-does-sass-work)
+- [কিভাবে SASS HTML ফাইলের সাথে যুক্ত করব ? - how to add SASS to HTML?](#কিভাবে-sass-html-ফাইলের-সাথে-যুক্ত-করব----how-to-add-sass-to-html)
+- [variables and nestings css rules](#variales-and-nestings-css-rules)
+- [Nesting css rules](#nesting-css-rules)
+- [Partials and sass settings](#partials-and-sass-settings)
+- [VS code settings (must be)](#vs-code-settings-must-be-configured-it)
+- [lets talk about module](#lets-talk-about-module)
+- [@mixin and @include](#mixin-and-include)
+- [@include and @inheritance](#include-and-inheritance)
+- [@if @else @else if এঁর ব্যাবহার ](#if-else-else-if)
+- [Loop - For - while](#loop---for--while)
 
 ### SASS কি? - what is SASS
 
@@ -26,14 +25,11 @@
 - It's is extension of CSS
 - SASS designed by hampton cattin and developed by natalie weizenbaum in 2006.
 
-<link name="#whatAreprerequities">
 ### SASS শিখতে কিভাবে প্রস্তুতি নিতে পারি ? - what are prerequities to learn SASS
 
 - HTML
 - CSS
 - Javascript (will help you greatly specially for @if, @for, @while etc.)
-
-<link name="#whySASS">
 
 ### কেন SASS শিখব ? - why SASS?
 
@@ -47,15 +43,12 @@
 4. ফ্রি তে ডাউনলোড করা যায় ।
 5. এটা CSS এঁর সব ভার্সন সাপোর্ট করে ।
 
-<link name="#howDOesSassWork">
 ### কিভাবে SASS কাজ করে ? - how to does SASS work?
 
 1. extension হবে .scss দিয়ে ।
 2. browser তো SASS বুঝতে পারবে না । তাই এই নিয়মে কাজ করবে ।
 
    SASS code demo.scss ---> pre-processor (transpiler) এটা স্ট্যান্ডার্ড কোডে রূপান্তর করবে । ---> standard css code (demo.css) ---> browser
-
-<link name="#howTOAddSassTohtml">
 
 ### কিভাবে SASS HTML ফাইলের সাথে যুক্ত করব ? - how to add SASS to HTML?
 
@@ -67,8 +60,6 @@
 * css এঁর যেভাবে কমেন্ট করতাম ঠিক সেই দুই নিয়মেই SASS এ কমেন্ট করা যাবে ।
 * SASS এ সিএসএস এঁর সব স্ট্যান্ডার্ড কোড করতে পারবেন ।
 * extension টা ইন্সটল করা হলে SV code এর একদম নিচে `watch sass` নামে একটা মেনু/ বাটন পাব সেখানে ক্লিক করে দিব ।
-
-<link name="#varialesNastingClass2">
 
 ### variales and nestings css rules
 
@@ -88,8 +79,6 @@ h1 {
  color: var(--primary-color, red);
 }
 ```
-
-<link name="#sassVarcls2">
 
 #### SASS variables
 
@@ -122,7 +111,6 @@ header{
 4. colors.
 5. lists
 6. null
-<link name="#nestingCssRulescls2">
 
 ### nesting css rules
 
@@ -177,8 +165,6 @@ nav{
 
 এইভাবে নেস্টেড করে সিএসএস লেখা যায় sass এ ।
 
-<link name="#partialsSassSettingsclas2">
-
 ### partials and sass settings
 
 - create a new folder name by `sass project`
@@ -188,7 +174,6 @@ nav{
 - then create a `HTML` file into the `App folder`. its a root file
 - then make HTML syntex to run webpage to the browser.
 
-<link name="#vsCodeSettingsclas2">
 ### VS code settings (must be configured it)
 
 \# Press command
@@ -255,7 +240,6 @@ nav{
 \# যেটা বলেছিলাম নতুন partials তিরি করলে সেঁতা ব্যাবহারের জন্য `root file` এ গিয়ে @forword এঁর মাধ্যমে অ্যাপ্লাই করতে হবে । এটা একটা ঝামেলাপূর্ণ ব্যাপার । তাই এখন একটা সমাধান তৈরি করব ।
 \# যার জন্য `base folder` এঁর ভেতরে `-index.scss` নামে একটা ফাইল তৈরি করব এবং এখানে যত partials আছে সও গুলোকে অ্যাপ্লাই করব `index.scss` কে root style file `(main.scss)` এ অ্যাপ্লাই করব ।
 
-<link name="#aboutModule">
 ### lets talk about module
 
 প্রথমত `until folder` এ গিয়ে `-variables.scss` নামে একটা partials তৈরি করছি । এবং সেখানে কিছু variable assign করি । অ্যাপ্লাই করার জন্য এঁর ভেতরেই `-index.scss` নামে একটা partials তৈরি করব যেটা সব ডিজাইন কে অ্যাপ্লাই করতে সাহায্য করবে ,। তারপর আগের মতি শুধু `-index.scss` কে অ্যাপ্লাই করে দিব
@@ -283,8 +267,6 @@ header {
  background-color: variable.$header;
 }
 ```
-
-<link name="#mixinInclude">
 
 ## @mixin and include
 
@@ -330,8 +312,6 @@ uses.
 }
 ```
 
-<link name="#includeinheritance">
-
 ### @include and inheritance
 
 @extend এঁর মাধ্যমে আমরা একটি selector এঁর কিছু property অন্য একটি selector এঁর মধ্যে inharit করতে পারি
@@ -353,8 +333,6 @@ uses.
 }
  btn2 class এও btn এঁর সব ডিজাইন অ্যাপ্লাই হয়ে যাবে । extend করার পাশাপাশি আপনি চাইলে আরও css add করতে পারবেন ।
 ```
-
-<link name="#ifElseElseIf">
 
 ### @if, @else, @else if
 
@@ -379,8 +357,6 @@ uses.
       @include font-size(small)
 }
 ```
-
-<link name="#loopForWhile">
 
 ### Loop - For , while
 
